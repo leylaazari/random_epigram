@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: $main-color-text;
+}
+
+body {
+  background-color: $main-bg !important;
+  font-size: $main-font-size;
+  position: relative;
+  font-size: 700;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.spinner-container {
+  margin-top: 5rem;
+}
+
+.card {
+  background: transparent !important;
+  border: 1px solid $main-yellow !important;
+
+  .card-header {
+    border-bottom: 1px solid $main-yellow !important;
+    font-size: 20px !important;
+    color: $main-yellow !important;
+  }
+}
+
+.epigram-display-container {
+  background-color: transparent !important;
+  border: 1px solid $main-yellow-dark !important;
+  color: #dfdfdf;
+  box-shadow: 0 0 5px $main-yellow !important;
+  border-radius: 1rem;
+}
+
+.userform__error {
+  color: $red;
+  font-size: 11px;
+  font-size: 0.786rem;
+  line-height: 19px;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.Toastify__toast-body div {
+  color: black !important;
+}
+
+@media (max-width: 767px) {
+  .hide-sx {
+    display: none;
+  }
+}

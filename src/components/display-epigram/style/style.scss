@@ -1,0 +1,19 @@
+@import "src/scss/variables";
+
+.c-epigram-change {
+  padding: 0 3rem 0 3rem;
+}
+
+.card-body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.form-check-input:checked {
+  background-color: $main-yellow;
+  border-color: $main-yellow;
+}
+
+.form-check-input {
+  margin-left: 0px !important;
+}
