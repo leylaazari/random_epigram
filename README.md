@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# `random_epigram`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Contents
 
-## Available Scripts
+    1. Description
+
+    2. Demo
+    
+    3. Run
+
+    4. Directory structure/project
+
+    5. Packages
+
+    6. Style
+
+    7. Test
+
+    8. Preview of the project
+    
+# Description
+
+This App prints a random epigram (like the `fortune` command-line tool, but on the web). Users can trigger loading another epigram and they can enable/disable automatic reloading. In addition, users can add their own epigrams.
+
+fortune is a simple program that displays random poignant, inspirational, silly or snide phrases from a database of quotations. The fortune command-line utility is part of the fortune-mod package.
+
+# Demo
+
+https://leylaazari.github.io/random_epigram
+
+
+# Run
 
 In the project directory, you can run:
 
-### `npm start`
+#### npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### npx cypress open
+- run component test
+- run e2e test
 
-### `npm test`
+# Directory structure/project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React doesn’t have opinions on how you put files into folders. there are a few common approaches popular in the ecosystem:
 
-### `npm run build`
+- Grouping by feature or routes
+- Grouping by file type
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Colocation**: it is a good idea to keep files that often change together close to each other. This principle is called “Colocation”.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this project I used **Group by feature or routes**. In this way all of file related a component (sass, test, …) is in the same folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Packages
 
-### `npm run eject`
+These packages are installed in this project:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- random-fortune
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- sass
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- react-router-dom
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- react-hook-form
 
-## Learn More
+- bootstrap
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- react-toastify
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- cypress
+
+# Style
+
+2 type of styles were used in the project:
+
+- **Bootstrap**
+- **SASS**
+
+# State management
+
+I don't use state management in this project. I saved the related data of "Epigram" in LocalStorage.
+but actually, this information should be send to the server and stored in database, but here I used a temp and quick method!
+
+# Test
+
+The Library used for testing is **Cypress**.
+
+![Optional Text](../main/src/assets/images/readme/1.JPG)
+
+# Preview of the project
+
+This project have 2 pages:
+
+    - Home
+
+    - About
+
+## Desktop view
+
+![Optional Text](../main/src/assets/images/readme/2.jpg)
+
