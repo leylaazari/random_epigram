@@ -99,5 +99,5 @@ This project have 2 pages:
 
 ## Desktop view
 
-![Optional Text](../main/src/assets/images/readme/2.jpg)
+![Optional Text](../main/src/assets/images/readme/2.png)
 
