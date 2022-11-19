@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/248.2b37ab5e.chunk.css","mappings":"AAAA,iBACE,gBAGA,gBAFA,mBACA,uBACA","sources":["components/about/style/style.scss"],"sourcesContent":[".about-container {\r\n  margin-top: 5rem;\r\n  text-align: justify;\r\n  text-justify: inter-word;\r\n  min-height: 50vh;\r\n}\r\n"],"names":[],"sourceRoot":""}
