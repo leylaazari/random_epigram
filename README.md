@@ -22,7 +22,9 @@
 
 This App prints a random epigram (like the `fortune` command-line tool, but on the web). Users can trigger loading another epigram and they can enable/disable automatic reloading. In addition, users can add their own epigrams.
 
-fortune is a simple program that displays random poignant, inspirational, silly or snide phrases from a database of quotations. The fortune command-line utility is part of the fortune-mod package.
+Fortune is a simple program that displays random poignant, inspirational, silly or snide phrases from a database of quotations. The fortune command-line utility is part of the fortune-mod package.
+
+In this project, the random-fortune package was used to generate random epigrams. User can save new epigram which will be saved in Localstorage and we have a random boolean constructor that detects whether the epigram should choose between package or localstorage.
 
 # Demo
 
@@ -39,8 +41,12 @@ Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
 #### npx cypress open
-- run component test
-- run e2e test
+
+- You can run:
+
+    - component testing
+    
+    - E2E testing
 
 # Directory structure/project
 
@@ -69,7 +75,7 @@ These packages are installed in this project:
 
 - react-toastify
 
-- cypress
+- cypress 11.0.0
 
 # Style
 
@@ -81,11 +87,22 @@ These packages are installed in this project:
 # State management
 
 I don't use state management in this project. I saved the related data of "Epigram" in LocalStorage.
-but actually, this information should be send to the server and stored in database, but here I used a temp and quick method!
+but actually, this information should be send to the server and stored in database.
 
 # Test
 
 The Library used for testing is **Cypress**.
+
+In this project, 2 types of tests were written:
+
+- Component testing
+
+- E2E testing
+
+```diff
+You can run them using the Cypress dashboard. (npx cypress open)
+```
+#### E2E tests:
 
 ![Optional Text](../main/src/assets/images/readme/1.JPG)
 
